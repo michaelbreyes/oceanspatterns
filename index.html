@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Daniel Ocean on Software</title>
+
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="./css/reveal.css">
+  <link rel="stylesheet" href="./css/theme/solarized.css" id="theme">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/site.css">
+
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="./css/vs.css">
+
+  <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+  <script>
+    document.write('<link rel="stylesheet" href="./css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+  </script>
+
+  <!--[if lt IE 9]>
+		<script src="./lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+
+      <!-- Splash -->
+      <section>
+        <h2>Software Patterns</h2>
+        <h2>from the Oceans movies</h2>
+        <p>
+          <small>by &nbsp;&nbsp;Mike Reyes</small>
+        </p>
+      </section>
+
+      <!-- Credits -->
+      <section>
+        <h2>Credits</h2>
+        <p>Gang of Four</p>
+        <p>Addy Osmani</p>
+        <p>Uncle Bob Martin</p>
+        <p>Creator of RevealJs</p>
+      </section>
+
+      <!-- About the movies -->
+      <section>
+        <h2>The Oceans movies</h2>
+        <p>
+          <div class="bullet-list">
+            Span from 2001 to 2007 (still fun to watch)
+            <br /> (11) Highest grossing movie for almost all actors
+            <br /> Complex movies that have tie-ins to software patterns
+          </div>
+        </p>
+      </section>
+
+      <!-- Ocean's Eleven -->
+      <!-- Facade Pattern -->
+      <section>
+        <section>
+          <h1>Ocean's Eleven</h1>
+        </section>
+        <section>
+          <h2>Facade Pattern</h2>
+          <p class="fragment">Hiding a complex system with a simpler interface</p>
+        </section>
+        <section data-background="./images/facade/facade1.jpg">
+          <div class="dark-round-panel" style="width: 650px; margin-top: 420px; margin-left: 620px;">
+            <h2 class="bright">Daniel Ocean</h2>
+            <p>Mastermind of the Bellagio job</p>
+            <p>Involved in several key acts and areas</p>
+          </div>
+        </section>
+        <section>
+          <h2>What he showed Terry &amp; Tess</h2>
+          <img src="./images/facade/facade2.jpg" width="800" />
+        </section>
+        <section>
+          <img src="./images/facade/facade4.jpg" height="550" />
+          <img src="./images/facade/facade3.jpg" height="550" />
+        </section>
+        <section>
+          <img src="./images/facade/facade5.jpg" height="450" />
+          <img src="./images/facade/facade6.jpg" height="450" />
+        </section>
+        <section data-background="./images/facade/hiding.gif">
+          <h2 class="light bottom">What was he hiding?</h2>
+        </section>
+        <section>
+          <img src="./images/facade/facade7.jpg" height="600" />
+        </section>
+        <section>
+          <p style="position: absolute;"><img src="./images/facade/facade8a.jpg" height="500" /></p>
+          <p style="position: absolute; left: 300px;" class="fragment fade-in"><img src="./images/facade/facade8.jpg" height="500"
+            /></p>
+        </section>
+        <section>
+          <div style="margin-top: -55px;">
+            <img src="./images/facade/facade9.jpg" height="300" />
+            <img class="fragment" src="./images/facade/facade10.jpg" height="300" />
+            <img class="fragment" src="./images/facade/facade11.jpg" height="390" />
+          </div>
+        </section>
+        <section>
+          <img src="./images/facade/facade12.jpg" height="550" />
+        </section>
+        <section>
+          <h2>Facades in S.H.I.V.</h2>
+          <p class="fragment">Takes out the guesswork of what class you need to access</p>
+          <p class="fragment">Used as the only entry point into a project/layer</p>
+          <p class="fragment">When a project has only 1 entry point, no one can bypass your validation</p>
+        </section>
+        <section>
+          <h2>Bonus Fact</h2>
+          <div class="fragment left-block">
+            <h3>Definition of SHIV</h3>
+            A knife or weapon not made from metal (think toothbrush)
+            <br /> Not to be confused with a shank (made of metal)
+            <br />
+          </div>
+        </section>
+        <section>
+          Verb: "Better not break the build unless you wanna get shivved"
+          <br /><br />
+          <img src="./images/facade/shiv.gif" />
+        </section>
+      </section>
+
+      <!-- Service Locator Pattern -->
+      <section>
+        <section>
+          <h2>Service Locator Pattern</h2>
+          <p class="fragment">
+            Return the information (or service) necessary to perform a certain task
+          </p>
+        </section>
+        <section data-background="./images/service/service1.jpg">
+          <div class="dark-round-panel" style="width: 650px; margin-top: 420px; margin-left: 20px;">
+            <h2 class="bright">Rusty Ryan</h2>
+            <p>Right-hand man</p>
+            <p>Helps build the con and the team</p>
+          </div>
+        </section>
+        <section>
+          <h2>Putting together the heist</h2>
+          <img src="./images/service/service2.jpg" width="800" />
+        </section>
+        <section style="margin-top: -60px;">
+          <h4>"So what are you thinking?"</h4>
+          <h4>Off the top of my head, I'd say you're looking at:</h4>
+          <div class="inline fragment captioned">
+            a Boesky<br />
+            <img src="./images/strategy/strategy4.jpg" alt="" height="200" />
+            <br />(wealthy con man)
+          </div>
+          <div class="inline fragment captioned">
+            a Jim Brown<br />
+            <img src="./images/service/jimbrown.png" alt="" height="200" />
+            <br />(staged fight)
+          </div>
+          <div class="inline fragment captioned">
+            a Miss Daisy<br />
+            <img src="./images/service/missdaisy.png" alt="" height="200" />
+            <br />(getaway vehicle)
+          </div>
+          <div style="white-space: nowrap;">
+            <div class="inline captioned fragment">
+              two Jethros<br />
+              <img src="./images/decorator/decorator1.jpg" alt="" height="200" />
+              <br />(hillbilly, gear-head types)
+            </div>
+            <div class="inline captioned fragment">
+              and a Leon Spinks<br />
+              <img src="./images/service/leonspinx.jpg" alt="" height="200" />
+              <br />(main event blackout)
+            </div>
+            <div class="inline captioned fragment">
+              <div style="line-height: 24px;">not to mention<br />the biggest Ella<br />Fitzergerald ever</div>
+              <img src="./images/service/ellafitzgerald.png" alt="" height="200" />
+              <br />(looped fake footage)
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Getting the bank roller</h2>
+          <img src="./images/service/service3.jpg" width="900" />
+        </section>
+        <section>
+          <h2>Getting the Boesky</h2>
+          <img src="./images/service/service4b.jpg" width="900" />
+        </section>
+        <section>
+          <h2>Getting the Grease Man</h2>
+          <img src="./images/service/service5b.gif" width="900" />
+        </section>
+        <section>
+          <h2>Service Locator in S.H.I.V.</h2>
+          <pre><code contenteditable class="larger-code cs">public ServiceLocatorBase ProductionServiceLocator {
+
+    private Lazy&lt;RoomService&gt; _roomService = new Lazy&lt;RoomService&gt;(() => new RoomService()));
+    private RoomService RoomService => _roomService.Value;
+
+    protected override RoomService GetRoomServiceCore() {
+        return RoomService;
+    }
+}</code></pre>
+          <p>Replaces IoC containers</p>
+          <p>Facade depends on them for all services needed</p>
+          <p>Lazy load services to save overhead</p>
+        </section>
+        <section>
+          <h3>How is Service Locator different<br />than the Factory pattern?</h3>
+          <br />
+          <ol>
+            <li class="fragment">
+              Factories create new instances ALWAYS<br /> SL passes an existing instance (may create on the fly)
+            </li>
+            <br />
+            <li class="fragment">
+              Factories return objects (probably have properties and methods)<br /> SL returns services (only have methods)
+            </li>
+          </ol>
+        </section>
+        <section>
+          <h2>Bonus Fact</h2>
+          <p class="fragment">Brad Pitt is almost always seen eating or drinking on screen</p>
+          <p class="fragment">
+            Filming schedule was hectic with little time for him to eat<br /> so those shots are of him actually eating his
+            meals
+          </p>
+          <p class="fragment">
+            As a gag at the end of the film,<br />Rusty gets heartburn and throws the food away
+          </p>
+        </section>
+      </section>
+
+      <!-- Single Responsibility Principle -->
+      <section>
+        <section>
+          <h2>Single Responsibility Principle (SRP)</h2>
+          <p>
+            <h5>Part of the SOLID principles of OOD</h5>
+            <br>
+            <div class="fragment bullet-list">
+              A class should have only one reason to change
+              <div class="center">or</div>
+              Each class will handle only one responsibility
+            </div>
+          </p>
+        </section>
+        <section data-background="./images/srp/srp1.jpg">
+          <div class="dark-round-panel" style="width: 650px; margin-top: 480px; margin-left: 20px;">
+            <h2 class="bright">Basher</h2>
+            <p>Demolitions Expert</p>
+          </div>
+        </section>
+        <section>
+          "Lazy Al. You had one job to do!"
+          <br />
+          <img src="./images/srp/srp2.jpg" width="1000" alt="">
+        </section>
+        <section>
+          <div style="margin-top: -100px;">
+            <img src="./images/srp/srp3.jpg" width="780" alt="" />
+            <img src="./images/srp/srp4.jpg" width="780" alt="" />
+          </div>
+        </section>
+        <section>
+          <div style="margin-top: -100px;">
+            <img src="./images/srp/srp6.jpg" width="680" alt="" />
+          </div>
+        </section>
+        <section>
+          <div style="margin-top: -100px;">
+            <img src="./images/srp/srp7.jpg" width="680" alt="" />
+            <img class="fragment" src="./images/srp/srp8.jpg" width="680" alt="" />
+          </div>
+        </section>
+        <section>
+          <h3>Example of not using SRP</h3>
+          <br>
+          <p><strong>A module that compiles and prints a report</strong></p>
+          <br>
+          <div class="bullet-list">
+            Two reasons the module can change
+            <br> 1) Report content can change
+            <br> 2) Formatting of report can change
+          </div>
+        </section>
+        <section>
+          <h2>Bonus Fact</h2>
+          <p class="fragment">
+            Ocean's Eleven came out in 2001 has made $450 million to date (worldwide).
+            <br><br> However, the highest grossing movie that Don Cheadle has been in is currently
+            <br /><strike>Iron Man 3</strike> Avengers: Infinity War.
+          </p>
+          <br />
+          <h2 class="fragment">$2,045,713,611</h2>
+        </section>
+      </section>
+
+      <!-- Mediator Pattern -->
+      <section>
+        <section>
+          <h2>Mediator Pattern</h2>
+          <p class="fragment">One object encapsulates how a set of objects interact</p>
+        </section>
+        <section data-background="./images/mediator/mediator1b.jpg">
+          <div class="dark-round-panel" style="width: 650px; margin-top: 420px; margin-left: 100px;">
+            <h2 class="bright">Livingston Dell</h2>
+            <p>Neurotic electronics guy</p>
+            <p>Set up surveillance, coordinate team</p>
+          </div>
+        </section>
+        <section style="margin-top: -100px;">
+          <h2>Setting up surveillance</h2>
+          <img src="./images/mediator/mediator2.jpg" alt="" width="800" />
+          <img src="./images/mediator/mediator2b.png" alt="" width="800" />
+        </section>
+        <section>
+          <h2>Point man for flow of events</h2>
+          <img src="./images/mediator/mediator3.jpg" alt="" height="600" />
+        </section>
+        <section>
+          <img src="./images/mediator/mediator4.jpg" alt="" height="600" />
+        </section>
+        <section>
+          <h2>Someone call for a doctor?</h2>
+          <img src="./images/mediator/mediator5.jpg" alt="" height="500" />
+        </section>
+        <section>
+          <img src="./images/mediator/mediator6.jpg" alt="" height="500" />
+        </section>
+        <section>
+          <h2>Mediator in S.H.I.V.</h2>
+          <img class="fragment" src="./images/mediator/mediator7.png" height="400" />
+          <p class="fragment">
+            Singleton (static class)<br /> Helpful for spying on expensive method calls
+          </p>
+        </section>
+        <section>
+          <h2>Bonus Fact</h2>
+          <p class="fragment">
+            The wig that Brad Pitt uses is the same wig<br /> Mike Meyer's used in his rehearsal for Austin Powers
+          </p>
+          <img src="./images/mediator/mediator5.jpg" alt="" height="400" />
+        </section>
+      </section>
+
+      <!-- Observer Pattern -->
+      <section>
+        <section>
+          <h2>Observer Pattern</h2>
+          <h5>aka PubSub</h5>
+          <br>
+          <p class="fragment">
+            A subject maintains a list of dependents (observers)
+            <br /> notifies them automatically of any state changes
+            <br /> (triggers one of their methods)
+          </p>
+        </section>
+        <section data-background="./images/observer/observer1.png">
+          <div class="dark-round-panel" style="width: 850px; margin-top: 420px; margin-left: 100px;">
+            <h2 class="bright">Linus Caldwell</h2>
+            <p>Up and coming pickpocket</p>
+            <p>Surveilled several people, lift code from Terry</p>
+          </div>
+        </section>
+        <section>
+          <p>Observing Terry and the timing of carts going into the vault</p>
+          <img src="./images/observer/observer2.jpg" alt="" height="350">
+        </section>
+        <section>
+          <p>Observing Tess</p>
+          <img src="./images/observer/observer3.jpg" alt="" height="350">
+        </section>
+        <section>
+          <p>Observing Danny</p>
+          <img src="./images/observer/observer4.gif" alt="" height="500">
+        </section>
+        <section>
+          <p>Relays his findings to other members of the team</p>
+          <img src="./images/observer/observer5.jpg" alt="" height="400">
+        </section>
+        <section>
+          <h2>Sounds just like the Mediator Pattern</h2>
+        </section>
+        <section>
+          <h3>Key Difference</h3>
+          <p class="fragment">
+            <strong>Mediator:</strong> There should only be 1 mediator
+          </p>
+          <p class="fragment">
+            <strong>Observer:</strong> There can be many observers and subscribers
+            <br> Message passing is handled via a <strong>Message Bus</strong>
+            <br>
+            <img src="./images/observer/observer6.jpg" alt="" width="400" />
+            <img src="./images/observer/observer7.jpg" alt="" width="400" />
+            <img src="./images/observer/observer8.jpg" alt="" width="400" />
+          </p>
+        </section>
+        <section>
+          <h2>Bonus Fact</h2>
+          <p>
+            <div>
+              Matt Damon's scene in Ocean's 13 was done in<br /> London while he was filming The Bourne Ultimatum
+              <br />
+              <img src="./images/observer/Observer9.png" alt="" width="500" />
+            </div>
+            <div class="fragment">
+              His talk about paranoia and multiple aliases along with the shaky cam<br /> was a nod to how it's like in the
+              Jason Bourne movies
+            </div>
+          </p>
+        </section>
+      </section>
+
+      <!-- Strategy Pattern -->
+      <section>
+        <section>
+          <h2>Strategy Pattern</h2>
+          <p class="fragment">Encapsulating business rules within the entities themselves</p>
+        </section>
+        <section>
+          <h3>The art of negotiation</h3>
+          <br>
+          <p>
+            There are several times in the movie where different team<br /> members have to negotiate and they each do it
+            their own way.
+          </p>
+        </section>
+        <section>
+          <h2>Rusty Ryan</h2>
+          <strong>Negotiating: </strong> Payment for gambling lessons
+          <br>
+          <img src="./images/strategy/strategy1.gif" alt="" height="400">
+          <br>
+          <strong>Strategy: </strong> Dissatisfied look and silence
+        </section>
+        <section>
+          <h2>Frank Catton</h2>
+          <strong>Negotiating: </strong> Buying vans
+          <br>
+          <img src="./images/strategy/strategy2.jpg" alt="" height="400">
+          <img src="./images/strategy/strategy3.jpg" alt="" height="400">
+          <br>
+          <strong>Strategy: </strong> Squeeze tactic
+        </section>
+        <section>
+          <h2>Saul Bloom</h2>
+          <strong>Negotiating: </strong> Getting his briefcase in the vault
+          <br>
+          <img src="./images/strategy/strategy4.jpg" alt="" height="400">
+          <br>
+          <strong>Strategy: </strong> Implied payoff
+        </section>
+        <section data-background="#777">
+          <pre><code contenteditable class="larger-code cs">public interface INegotiator {
+    public void Negotiate();
+}
+
+public class RustyRyan : INegotiator {
+    public void Negotiate() {
+        CrossArms();
+        GiveGuiltyLook();
+    }
+}
+
+public class FrankCatton : INegotiator {
+    public void Negotiate() {
+        StrongArm();
+    }
+}
+
+public class SaulBloom : INegotiator {
+    public void Negotiate() {
+        Bribe();
+    }
+}</code></pre>
+          <p class="bright">Classes that differ in their behavior</p>
+        </section>
+        <section>
+          <h2>Bonus Fact</h2>
+          <br>
+          <p>
+            Saul Bloom goes into character as "Lyman Zerga", a Russian arms dealer
+            <br><br>
+            <span class="fragment">In Spanish "La monserga" roughly translates to someone who is a pain in the butt</span>
+          </p>
+        </section>
+      </section>
+
+      <!-- Yen -->
+      <!-- 
+        <section>
+          <section>
+            <h2>Dependency Inversion Principle (DIP)</h2>
+            <p>
+              <h5>Part of the SOLID principles of OOD</h5>
+              <br>
+              <div class="fragment">
+                Depend upon abstractions, not upon concretions
+              </div>
+            </p>
+          </section>
+          <section>
+            <h2>Dependency Injection</h2>
+            <div class="bullet-list">
+              Pattern to remove hard-coded dependencies
+              <br>
+              Dependent classes do not instantiate objects
+              <br>
+              They are passed in as parameters instead
+            </div>
+          </section>
+          <section data-background="./images/yen/yen1.jpg">
+            <div class="dark-round-panel" style="width: 850px; margin-top: 420px; margin-left: 200px;">
+              <h2 class="bright">The Amazing Yen</h2>
+              <p>Grease Man</p>
+            </div>
+          </section>
+          <section>
+            <img src="./images/yen/yen6.jpg" alt="" height="500">
+          </section>
+          <section>
+            <img src="./images/yen/yen7.jpg" alt="" height="500">
+          </section>
+          <section>
+            <img src="./images/yen/yen8.jpg" alt="" height="500">
+          </section>
+          <section>
+            <img src="./images/yen/yen3.jpg" alt="" height="500">
+            <h3 class="fragment">Unit Testing</h3>
+          </section>
+          <section>
+            <img src="./images/yen/yen4.jpg" alt="" height="500">
+          </section>
+          <section>
+            <img src="./images/yen/yen5.jpg" alt="" height="500">
+            <h3 class="fragment">Mocks</h3>
+          </section>
+          <section>
+            <h2>Bonus Fact</h2>
+            <p>Shaobo Qin was just 19 for Ocean's Eleven and is 4'11" tall</p>
+            <p class="fragment">Avg male height in China - 5'8"</p>
+            <br>
+            <p class="fragment">Tallest country <span class="fragment">- Norway (6'0")</span></p>
+            <br>
+            <p class="fragment">Philippines is 5'4"</span></p>
+          </section>
+        </section>
+        -->
+
+      <!-- Ocean's Twelve -->
+      <!-- Leaders -->
+      <section>
+        <section>
+          <h1>Ocean's Twelve</h1>
+        </section>
+        <section>
+          <h3>Team gets busted</h3>
+          <img src="./images/leader/leader1.jpg" alt="" height="600">
+        </section>
+        <section>
+          <h3>Have to make money</h3>
+          <img src="./images/leader/leader2.jpg" alt="" height="600">
+        </section>
+        <section>
+          <h3>Challenged by the Nightfox</h3>
+          <img src="./images/leader/leader3.jpg" alt="" height="600">
+        </section>
+        <section>
+          <img src="./images/leader/leader4.jpg" alt="" height="500">
+        </section>
+        <section>
+          <h3>Beaten by a master thief</h3>
+          <img src="./images/leader/leader5.jpg" alt="" height="500">
+        </section>
+        <section>
+          <h3>Thrown in jail</h3>
+          <img src="./images/leader/leader6.jpg" alt="" height="500">
+        </section>
+        <section>
+          <p>"Now if you'll just pay us our money, we'll be on our way"</p>
+          <img src="./images/leader/leader7c.jpg" alt="" height="500">
+          <img src="./images/leader/leader7b.jpg" alt="" height="500">
+        </section>
+        <section data-background="./images/leader/leader8.jpg">
+          <div class="dark-round-panel" style="width: 650px; margin-top: 520px; margin-left: 100px;">
+            <h2 class="bright">Gaspar LeMarque</h2>
+            <p>Greatest Master Thief of all time</p>
+          </div>
+        </section>
+        <section>
+          <h2>Consult your leadership</h2>
+          <div class="bullet-list">
+            <span class="fragment">Have lots of experience</span>
+            <br>
+            <span class="fragment">Can help you out of a jam</span>
+            <br>
+            <span class="fragment">Are looking out for you</span>
+          </div>
+        </section>
+        <section>
+          <img src="./images/leader/leader9.jpg" alt="" height="500">
+        </section>
+        <section data-background="./images/leader/mansion.jpg">
+          <div class="dark-round-panel" style="width: 700px; margin-top: -50px; margin-left: 100px;">
+            <h2 class="light">Bonus Fact</h2>
+            <p class="fragment">
+              Toulour's mansion is on the shores of Lake Como in Italy.
+            </p>
+            <br>
+            <p class="fragment">
+              The name of the city overlooking Lake Como is Bellagio.
+            </p>
+            <br>
+            <p class="fragment">
+              Both the city and the lake were the inspiration for the design of the Bellagio casino in Las Vegas.
+            </p>
+          </div>
+        </section>
+        <section>
+          <h2>Double Bonus Fact</h2>
+          <p class="fragment">
+            Danny's team steals 4 paintings from the Nightfox<br /> much to his surprise/pleasure
+            <br />
+            <img src="./images/leader/paintings1.jpg" height="400" />
+            <span class="fragment">
+              <img src="./images/leader/paintings2.jpg" height="400" />
+              <br /> Shape of a middle finger
+            </span>
+          </p>
+        </section>
+      </section>
+
+      <!-- CSRF -->
+      <!--
+        <section>
+          <section>
+            <h2>Isabel Lahiri</h2>
+            <h5>Europol Agent</h5>
+            <img src="./images/xsrf/xsrf1.jpg" alt="">
+          </section>
+          <section>
+            <img src="./images/xsrf/xsrf2.jpg" alt="" height="500">
+          </section>
+          <section>
+            <img src="./images/xsrf/xsrf3.jpg" alt="" height="300">
+            <img src="./images/xsrf/xsrf4.jpg" alt="" height="300">
+          </section>
+          <section>
+            <h2>Forged 1077 form</h2>
+            <img src="./images/xsrf/xsrf5.jpg" alt="" width="450">
+            <img src="./images/xsrf/xsrf6.jpg" alt="" width="450">
+          </section>
+          <section>
+            <h2>CSRF (or XSRF)</h2>
+            <div class="bullet-list">
+              A malicious site embeds code on a page
+              <br>
+              An unwitting user opens that page in their browser (or email)
+              <br>
+              An action gets triggered on behalf of the user
+            </div>
+          </section>
+          <section>
+            <h2>Step 1</h2>
+            <h3>Email Message from Jim</h3>
+            <p>
+              <br>
+              <div style="border: 1px solid gray; padding: 15px;">
+                Hello Bob! Look here:<br/><br/>
+                &lt;img src="./http://bigbank.com/withdraw?account=Bob&amount=1000000&for=Jim"&gt;
+              </div>
+              <br>
+              The url is executed as a web GET request
+            </p>
+          </section>
+          <section>
+            <h2>Step 2</h2>
+            <h3>BigBank asks for cookie</h3>
+            <br>
+            <div class="bullet-list">
+              You've logged into BigBank.com in the last hour
+              <br>
+              A cookie exists that is authorized to access the site
+            </div>
+          </section>
+          <section>
+            <h2>Step 3</h2>
+            <h3>BigBank checks cookie</h3>
+            <br>
+            <div class="bullet-list">
+              Security on BigBank is not very thorough
+              <br>
+              Your cookie's validity checks out
+              <br>
+              Your transaction is processed
+            </div>
+          </section>
+          <section>
+            <h2>Protecting against CSRF</h2>
+            <div class="bullet-list">
+              <span class="fragment">Limit Session timeout</span>
+              <br>
+              <span class="fragment">Check Referer header</span>
+              <br>
+              <span class="fragment">Require a POST request for sensitive actions</span>
+              <br>
+              <span class="fragment">Embed a user-specific token in form submissions</span>
+            </div>
+          </section>
+          <section>
+            <h2>Bonus Fact</h2>
+            <p class="fragment">CSRF is #12 on the list of top software vulnerabilities according to CWE</p>
+            <br>
+            <p class="fragment">The #1 vulnerability is SQL injection</p>
+          </section>
+        </section>
+        -->
+
+      <!-- Decorator -->
+      <section>
+        <section>
+          <h2>Decorator Pattern</h2>
+          <p class="fragment">
+            Dynamically add behavior to an object<br /> without affecting any existing behavior
+          </p>
+        </section>
+        <section data-background="./images/decorator/decorator1.jpg">
+          <div class="dark-round-panel" style="width: 650px; margin-top: 420px; margin-left: 100px;">
+            <h2 class="bright">Malloy Brothers</h2>
+            <p>Getaway drivers / service workers</p>
+            <p>Blend in and do basic jobs</p>
+          </div>
+        </section>
+        <section>
+          <p>Working at the dice factory</p>
+          <img src="./images/decorator/decorator2.png" alt="" width="900" />
+        </section>
+        <section>
+          <p>Also adding mixture to "load" the dice</p>
+          <img src="./images/decorator/decorator3.png" alt="" width="900" />
+        </section>
+        <section>
+          <p>Working as a waiter</p>
+          <img src="./images/decorator/decorator4.png" alt="" width="900" />
+        </section>
+        <section>
+          <p>Also planting contaminated food</p>
+          <img src="./images/decorator/decorator5.png" alt="" width="900" />
+        </section>
+        <section>
+          Basic Room Repository
+          <pre><code contenteditable class="larger-code cs">public class RoomRepository : IRepository {
+    public void Update(Room room) {
+        context.Rooms.Attach(room);
+        context.SaveChanges();
+    }
+}</code></pre>
+          <br />
+          <div class="fragment">
+            Decorator to write to Kazmon whenever Update happens
+            <pre><code contenteditable class="larger-code cs">public class KazmonLoggingDecorator : IRepository {
+    public KazmonLoggingDecorator(IRepository repository) {
+        this.repository = repository;
+    }
+
+    public void Update(TModel model) {
+        this.repository.Update(model);
+        LogKazmonEntry("Update");
+    }
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <!-- Builder -->
+      <section>
+        <section>
+          <h2>Builder Pattern</h2>
+          <p class="fragment">
+            Simplify creating a complex object
+          </p>
+        </section>
+        <section data-background="./images/builder/builder1.jpg">
+          <div class="dark-round-panel" style="width: 650px; margin-top: 420px; margin-left: 800px;">
+            <h2 class="bright">Roman Nagel</h2>
+            <p>Technology expert and inventor</p>
+            <p>Builds several devices for 12 and 13</p>
+          </div>
+        </section>
+        <section>
+          <h2>Coronation egg hologram</h2>
+          <img src="./images/builder/builder2.jpg" alt="" width="850" />
+        </section>
+        <section>
+          <h2>Magnetron</h2>
+          <img src="./images/builder/builder3.jpg" alt="" width="850" />
+        </section>
+        <section>
+          <h2>Rigged card machines</h2>
+          <img src="./images/builder/builder4.jpg" alt="" width="850">
+        </section>
+        <section>
+          <div>
+            Kazmon Logging Decorator
+            <pre><code contenteditable class="larger-code cs">public class KazmonLoggingDecorator : IRepository {
+    public KazmonLoggingDecorator(IRepository repository) {
+        this.repository = repository;
+    }
+
+    public void Update(TModel model) {
+        this.repository.Update(model);
+        LogKazmonEntry("Update");
+    }
+}</code></pre>
+          </div>
+          <div class="fragment">
+            Further extending the IRepository
+            <pre><code contenteditable class="larger-code cs">      IRepository repo = RepositoryBuilder&lt;Room&gt;()
+                    .UseKazmonLogging()
+                    .UseRedisCache()
+                    .UseSignalR()
+                    .Build();
+      repo.Update(room);</code></pre>
+          </div>
+        </section>
+        <section>
+          <div>
+            .Net Core uses Builder a lot in Startup.cs
+            <pre><code contenteditable class="larger-code cs">
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app
+              .UseHttpsRedirection()
+              .UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod())
+              .UseCookiePolicy()
+              .UseWebSockets()
+              .UseSwagger()
+              .UseMvc();
+        }
+              </code></pre>
+          </div>
+        </section>
+        <section>
+          <h2>Bonus Fact</h2>
+          <p class="fragment">
+            In 2009, Eddie Izzard completed 43 marathons in 51 days<br /> in spite of having no prior history of long-distance
+            running
+          </p>
+          <br>
+          <p class="fragment">"It is my manifest destiny to wear a dress on all seven continents"</p>
+        </section>
+      </section>
+
+      <!-- Integration -->
+      <!--
+        <section>
+          <section>
+            <h2>Faberge Coronation Egg</h2>
+            <img src="./images/leader/leader4.jpg" alt="" height="500">
+          </section>
+          <section>
+            <img src="./images/integration/integration1.jpg" alt="">
+          </section>
+          <section>
+            <img src="./images/integration/integration2.jpg" alt="" height="500">
+            <p>Process Flow Diagram</p>
+          </section>
+          <section>
+            <img src="./images/integration/integration3.jpg" alt="">
+            <p>
+              10:37 "Approach the Spanish Steps from the south.
+              <br>
+              Basher and I enter by the main entrance."
+            </p>
+          </section>
+          <section>
+            <img src="./images/integration/integration4.jpg" alt="">
+            <p>
+              10:42 "Yen enters the mainframe room. He cuts power to grid."
+              <br>
+              "I then go to the Egg Room"
+            </p>
+          </section>
+          <section>
+            <img src="./images/integration/integration5.jpg" alt="">
+            <p>
+              10:44 "I blind camera one"
+              <br>
+              "I blind camera two"
+              <br>
+              "I blind camera three"
+              <br>
+              "I blind camera four"
+              <br>
+            </p>
+          </section>
+          <section>
+            <img src="./images/integration/integration6.jpg" alt="">
+            <p>
+              10:48 "We all get arrested"
+              <br>
+              "You bet"
+              <br>
+            </p>
+          </section>
+          <section>
+            <h1>Integration Testing</h1>
+          </section>
+        </section>
+        -->
+
+      <!-- Recap -->
+      <section>
+        <section>
+          <h1>Recap</h1>
+        </section>
+        <section>
+          <h2>Daniel Ocean</h2>
+          <img src="./images/facade/facade1.jpg" height="400" />
+          <br />
+          <h2 class="fragment">Facade Pattern</h2>
+        </section>
+        <section>
+          <h2>Rusty Ryan</h2>
+          <img src="./images/service/service1.jpg" height="400" />
+          <br />
+          <h2 class="fragment">Service Locator Pattern</h2>
+        </section>
+        <section>
+          <h2>Basher</h2>
+          <img src="./images/srp/srp2.jpg" height="400" />
+          <br />
+          <h2 class="fragment">Single Responsibility</h2>
+        </section>
+        <section>
+          <h2>Livingston Dell</h2>
+          <img src="./images/mediator/mediator3.jpg" alt="" height="350" />
+          <br />
+          <h2 class="fragment">Mediator Pattern</h2>
+        </section>
+        <section>
+          <h2>Linus Caldwell</h2>
+          <img src="./images/observer/observer1.png" alt="" height="350" />
+          <br />
+          <h2 class="fragment">Observer Pattern</h2>
+        </section>
+        <section>
+          <h2>Rusty, Frank, and Saul</h2>
+          <img src="./images/strategy/strategy3.jpg" alt="" height="350" />
+          <br />
+          <h2 class="fragment">Strategy Pattern</h2>
+        </section>
+        <!--
+          <section>
+            <h2>Yen</h2>
+            <img src="./images/yen/yen1.jpg" alt="">
+            <br />
+            <h2 class="fragment">Dependency Injection</h2>
+          </section>
+          -->
+        <section>
+          <h2>LeMarque</h2>
+          <img src="./images/leader/leader8.jpg" alt="" height="400" />
+          <br />
+          <h2 class="fragment">Consult Your Leader</h2>
+        </section>
+        <!--
+          <section>
+            <h2>Isabel Lahiri</h2>
+            <img src="./images/xsrf/xsrf1.jpg" alt="" height="400"/>
+            <br />
+            <h2 class="fragment">CSRF</h2>
+          </section>
+          -->
+        <section>
+          <h2>Malloy Brothers</h2>
+          <img src="./images/decorator/decorator1.jpg" alt="" height="400" />
+          <br />
+          <h2 class="fragment">Decorator Pattern</h2>
+        </section>
+        <section>
+          <h2>Roman Nagel</h2>
+          <img src="./images/builder/builder1.jpg" alt="" width="650" />
+          <br />
+          <h2 class="fragment">Builder Pattern</h2>
+        </section>
+      </section>
+
+      <!-- End -->
+      <section>
+        <h1>THE END</h1>
+        <br>
+        <h2>Thanks for stopping bye!</h2>
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="./lib/js/head.min.js"></script>
+  <script src="./js/reveal.js"></script>
+
+  <script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      width: '100%',
+
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+      keyboard: {
+        50: 'down', // number 2
+        52: 'left', // number 4
+        54: 'right', // number 6
+        56: 'up', // number 8,
+      },
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+        { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+        { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+        { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+        // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+        // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+    });
+    Reveal.configure({ backgroundTransition: 'concave' });
+  </script>
+
+</body>
+
+</html>

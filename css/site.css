@@ -1,0 +1,110 @@
+/*  File structure
+    The organization of this file is based off the SMACSS rules located at http://smacss.com/book
+
+    Guidelines
+    SMACSS defines logical sections for grouping your CSS
+    Within these logical sections you should alphabetize your selectors
+    Within curly braces, alphabetize your style settings
+    Try to avoid the use of !important and instead focus on overriding the base css framework
+    Try to avoid ID selectors as they don't allow for reuse
+    Try to give semantical names to classes
+        instead of "red" use "warning" or instead of "circular-image" use "badge"
+    Use hyphens to separate words instead of underscore
+    Never use capital letters in ids, classes, variables, etc.
+-------------------------------------------------------------------------- */
+/*  LESS specific
+-------------------------------------------------------------------------- */
+/*  Variables and fonts */
+/*  Mixins */
+/*  CSS framework overrides
+    We're using Foundation 4, override any of its stylings here (feel free to use !important here)
+-------------------------------------------------------------------------- */
+/* h2 {
+  margin-bottom: 35px !important;
+} */
+h5 {
+  letter-spacing: 0.06em !important;
+  font-family: Arial;
+  text-transform: none !important;
+}
+/*  Base rules and CSS framework overrides
+    These rules apply to elements (no class or id selectors here)
+-------------------------------------------------------------------------- */
+/*  Layout rules
+    These rules apply to classes that are used in multiple places or have a more general scope
+-------------------------------------------------------------------------- */
+.bullet-list {
+  line-height: 2.0em !important;
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
+}
+.spaced {
+  padding: 30px 0 0 135px !important;
+  line-height: 3.0em !important;
+}
+.center {
+  text-align: center;
+}
+.larger-code {
+  max-height: 650px !important;
+}
+.light {
+  color: #eee !important;
+}
+.bright {
+  color: rgb(8, 212, 248) !important;
+}
+.selected {
+  color: #fff !important;
+  background: rgb(255, 112, 136);
+  display: inline-block;
+  padding: 5px 20px !important;
+}
+.bottom {
+  margin-top: 620px !important;
+}
+.top {
+  margin-top: -420px !important;
+}
+.right {
+  margin-left: 720px !important;
+}
+.left-block {
+  display: inline-block;
+  text-align: left;
+}
+/*  Module rules
+    The intent for this section is that you group your styles here (for example, group by view or by page section)
+-------------------------------------------------------------------------- */
+/*  State rules
+    These rules define a specific state and will override the default style (use !important here)
+
+    Examples:
+        .is-selected, .is-collapsed, .is-error, .is-active
+-------------------------------------------------------------------------- */
+.is-red {
+  color: red;
+  font-size: 1.3em !important;
+}
+/*  Custom objects
+-------------------------------------------------------------------------- */
+.dark-round-panel {
+  background: #333;
+  opacity: 0.85;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px !important;
+}
+div.inline {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: bottom;
+  text-align: center;
+}
+div.captioned {
+  font-size: 28px;
+}
+div.captioned img {
+  margin: 0 0 -5px;
+}
